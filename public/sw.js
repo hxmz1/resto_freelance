@@ -1,5 +1,5 @@
-const CACHE = 'beb-lhouma-v1'
-const CORE = ['/', '/index.html', '/manifest.webmanifest', '/images/logo_restaurant.png', '/icons/pwa-192.png', '/icons/pwa-512.png', '/images/menu/tacos.png', '/images/menu/baguette.png', '/images/menu/sandwich.png', '/images/menu/libanais1.png', '/images/menu/pizza1.png', '/images/menu/pizza_tranche.png']
+const CACHE = 'beb-lhouma-v3'
+const CORE = ['/', '/index.html', '/manifest.webmanifest', '/images/logo_restaurant.png', '/icons/pwa-192.png', '/icons/pwa-512.png', '/images/menu/tacos.webp', '/images/menu/baguette.webp', '/images/menu/sandwich.webp', '/images/menu/libanais1.webp', '/images/menu/pizza1.webp', '/images/menu/pizza_tranche.webp']
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)))
